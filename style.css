@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgb(224, 224, 220);
+    padding: 150px 0 100px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: black;
+    display: block;
+
+}
+
+.menu .navbar ul li a:hover {
+    color: orangered;
+
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: orangered;
+    text-transform: uppercase;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    width: 50%;
+}
+
+.header-txt h1 {
+    line-height: 1;
+    color: black;
+    text-transform: uppercase;
+    font-size: 75px;
+    margin-bottom: 10px;
+}
+
+.header-txt p {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 45px;
+}
+
+.header-img {
+    width: 50%;
+}
+
+.button_slide {
+    color: orangered;
+    background-color: rgb(224, 224, 220);
+    border: 2px solid orangered;
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 orangered;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.slide_down:hover {
+    color: rgb(224, 224, 220);
+    box-shadow: inset 0 100px 0 0 orangered;
+}
+
+#outer {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+.about {
+    padding: 100px 0;
+    display: flex;
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    width: 500px;
+    border-radius: 15px;
+}
+
+.about-txt {
+    width: 50%;
+    margin-left: 25px;
+}
+
+.about-txt h2 {
+    color: orangered;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.about-txt p {
+    font-size: 16px;
+    color: grey;
+}
+
+.service {
+    padding: 50px 0 100px 0;
+    text-align: center;
+    background-color: rgb(224, 224, 220);
+}
+
+.service h2 {
+    color: black;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.service-content {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-1 {
+    padding: 25px;
+    box-shadow: 0 0 20px rgb(89, 84, 84);
+    background-color: rgb(237, 237, 234);
+    flex-basis: calc(33% - 20px);
+}
+
+.service-1 i {
+    font-size: 30px;
+    color: orangered;
+    margin-bottom: 15px;
+}
+
+.service-1 h3 {
+    font-size: 20px;
+    color: orangered;
+    text-transform: capitalize;
+}
+
+.formulary {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 60px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+}
+
+form h2 {
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container>i {
+    padding: 14px;
+    border-radius: 50%;
+    background-color: orangered;
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+}
+
+.input-container>input,
+textarea {
+    padding: 17px 15px 17px 65px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: transparent;
+    border: 2px solid orangered;
+    font-size: 16px;
+    outline: none;
+    color: black;
+}
+
+textarea {
+    font-family: "Montserrat", sans-serif;
+    height: 150px;
+}
+
+::placeholder {
+    color: gray;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: orangered;
+    padding: 17px 30px;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: aliceblue;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 50px;
+    background-color: rgb(237, 237, 234);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link ul li {
+    margin-right: 50px;
+}
+
+.link ul li a {
+    color: black;
+    font-size: 17px;
+}
+
+.link ul li a:hover {
+    color: orangered;
+}
+
+@media (max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: aliceblue;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-txt {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .header-img {
+        width: 100%;
+    }
+
+    .header-img img {
+        width: 100%;
+    }
+
+    .about {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 100%;
+        order: 2;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .about-txt {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .service {
+        padding: 30px;
+    }
+
+    .service-content {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .service-1 {
+        margin-bottom: 20px;
+    }
+
+    .formulary {
+        padding: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link ul {
+        flex-direction: column;
+    }
+
+    .link ul li {
+        margin: 0 0 15px 0;
+    }
+
+}
